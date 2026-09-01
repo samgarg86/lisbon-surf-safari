@@ -22,7 +22,7 @@
       style="text-align: {{ section.settings.text_alignment }};"
     >
       {%- if section.settings.heading != blank -%}
-        <h2 class="split-showcase-with-header__heading">{{- section.settings.heading -}}</h2>
+        <div class="split-showcase-with-header__heading">{{- section.settings.heading -}}</div>
       {%- endif -%}
       {%- if section.settings.subheading != blank -%}
         <p class="split-showcase-with-header__subheading">{{- section.settings.subheading -}}</p>
@@ -55,7 +55,19 @@
   }
 
   .split-showcase-with-header__heading {
+    font-size: var(--font-h2--size);
+    font-family: var(--font-heading--family);
+    font-weight: var(--font-heading--weight);
+    line-height: var(--font-heading--line-height);
+    letter-spacing: var(--font-heading--letter-spacing);
+  }
+
+  .split-showcase-with-header__heading p {
     margin: 0 0 0.4em;
+  }
+
+  .split-showcase-with-header__heading p:last-child {
+    margin-bottom: 0;
   }
 
   .split-showcase-with-header__subheading {
@@ -91,10 +103,10 @@
       "content": "Header"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "heading",
       "label": "Heading",
-      "default": "New arrivals"
+      "default": "<p>New arrivals</p>"
     },
     {
       "type": "text",
@@ -218,7 +230,7 @@
       "name": "Split showcase + header",
       "category": "t:categories.banners",
       "settings": {
-        "heading": "New arrivals",
+        "heading": "<p>New arrivals</p>",
         "subheading": "Discover our latest collections",
         "text_alignment": "left",
         "section_width": "full-width",
