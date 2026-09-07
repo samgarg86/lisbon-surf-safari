@@ -1659,7 +1659,7 @@
               "name": "t:names.text",
               "settings": {
                 "custom_anchor": "",
-                "text": "<p>If the ocean doesn't deliver, neither do I. Full refund. No questions asked.</p>",
+                "text": "<p>If the ocean doesn't deliver, neither do I. Full refund.</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
