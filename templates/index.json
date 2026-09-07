@@ -77,6 +77,7 @@
           "blocks": {
             "button_AyTaX7": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Book your safari",
                 "link": "shopify://collections/all",
@@ -97,7 +98,7 @@
               "type": "button",
               "settings": {
                 "label": "View Packages",
-                "link": "shopify://collections/all",
+                "link": "#surf-packages",
                 "open_in_new_tab": false,
                 "style_class": "button-custom",
                 "custom_button_background": "rgba(0,0,0,0)",
@@ -741,7 +742,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>SURF PACKAGES</h3>",
+                "text": "<h3>SURF SAFARI PACKAGES</h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -784,7 +785,7 @@
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 40,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -1048,8 +1049,8 @@
         "icons_shape": "none",
         "section_width": "page-width",
         "horizontal_alignment": "center",
-        "gap": 28,
-        "background_color": "{{ settings.color_palette.background }}",
+        "gap": 0,
+        "background_color": "#f0e3d2",
         "padding-block-start": 84,
         "padding-block-end": 0
       }
@@ -1568,7 +1569,7 @@
         "section_height": "",
         "section_height_custom": 50,
         "background_media": "none",
-        "background_color": "",
+        "background_color": "#f0e3d2",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
@@ -1581,7 +1582,7 @@
         "border_color": "",
         "border_radius": 0,
         "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-end": 0
       }
     },
     "section_F9fMc4": {
@@ -1643,7 +1644,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "{{ settings.color_palette.background }}",
+                "text_color": "{{ settings.color_palette.color1 }}",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -1670,7 +1671,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "{{ settings.color_palette.background }}",
+                "text_color": "{{ settings.color_palette.foreground }}",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -1705,13 +1706,13 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "background_media": "image",
+        "background_media": "none",
         "background_color": "{{ settings.color_palette.background }}",
         "video_position": "cover",
         "background_image": "shopify://shop_images/No_wave_86cfc266-acc1-44f6-a5ad-37c995ffc8e2.jpg",
         "background_image_position": "cover",
         "toggle_overlay": true,
-        "overlay_color": "#00000038",
+        "overlay_color": "#F0E3D2",
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "border": "none",
@@ -1737,7 +1738,7 @@
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-start",
             "gap": 32,
-            "width": "fill",
+            "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
@@ -1761,8 +1762,8 @@
             "placeholder": "hero-apparel-2",
             "padding-block-start": 40,
             "padding-block-end": 40,
-            "padding-inline-start": 40,
-            "padding-inline-end": 40
+            "padding-inline-start": 0,
+            "padding-inline-end": 80
           },
           "blocks": {
             "text_acTtbF": {
@@ -1800,7 +1801,7 @@
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -1827,14 +1828,14 @@
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "",
+                "text_color": "#e38613",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -1863,7 +1864,7 @@
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-start",
             "gap": 32,
-            "width": "fill",
+            "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
@@ -1887,8 +1888,8 @@
             "placeholder": "hero-apparel-1",
             "padding-block-start": 40,
             "padding-block-end": 40,
-            "padding-inline-start": 40,
-            "padding-inline-end": 40
+            "padding-inline-start": 0,
+            "padding-inline-end": 80
           },
           "blocks": {
             "text_WT6rLV": {
@@ -1926,7 +1927,7 @@
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -1957,14 +1958,14 @@
       ],
       "name": "Split showcase + header",
       "settings": {
-        "custom_anchor": "#guide-vs-lessons",
+        "custom_anchor": "guide-vs-lessons",
         "heading": "<h2><em>Surf Guide vs<br/>Surf Lessons</em></h2>",
         "subheading": "",
         "text_alignment": "left",
         "section_width": "page-width",
         "panels_height": "large",
         "background_color": "",
-        "padding-block-start": 0,
+        "padding-block-start": 39,
         "padding-block-end": 0
       }
     },
@@ -1976,7 +1977,7 @@
           "name": "t:names.heading",
           "settings": {
             "custom_anchor": "gallery",
-            "text": "<h2>Surf Safari Vibes..</h2>",
+            "text": "<h2><em>Surf Safari Vibes..</em></h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -1991,7 +1992,7 @@
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
-            "padding-block-start": 100,
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -2046,7 +2047,7 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "page-width",
@@ -2165,7 +2166,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "Book Now",
-                "link": "shopify://collections/all",
+                "link": "#surf-packages",
                 "open_in_new_tab": false,
                 "style_class": "button-secondary",
                 "custom_button_background": "{{ settings.color_palette.foreground }}",
@@ -2184,7 +2185,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "Whatsapp me",
-                "link": "shopify://collections/all",
+                "link": "https://wa.me/351928401098",
                 "open_in_new_tab": false,
                 "style_class": "button-custom",
                 "custom_button_background": "rgba(0,0,0,0)",
@@ -2243,7 +2244,7 @@
       "settings": {
         "custom_anchor": "",
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/surfing-some-chill-waves-in-ericeira.png",
+        "image_1": "shopify://shop_images/DSCF5094.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -2264,7 +2265,7 @@
         "section_height_custom": 50,
         "background_color": "",
         "toggle_overlay": true,
-        "overlay_color": "#00000045",
+        "overlay_color": "#00000099",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": false,
