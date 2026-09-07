@@ -16,6 +16,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
+            "custom_anchor": "",
             "text": "<h1>Your Local Surf Buddy in Lisbon</h1>",
             "width": "fit-content",
             "max_width": "normal",
@@ -42,7 +43,8 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><em>I specialize in taking you to the wave you actually wanna surf.</em></p>",
+            "custom_anchor": "",
+            "text": "<p><em>I specialize in taking you to the wave you actually wanna surf</em></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -64,22 +66,81 @@
           },
           "blocks": {}
         },
-        "button_MGhx96": {
-          "type": "button",
-          "name": "t:names.button",
+        "button_group_k3xnAm": {
+          "type": "button-group",
+          "name": "Button group",
           "settings": {
-            "label": "View packages",
-            "link": "shopify://collections",
-            "open_in_new_tab": false,
-            "style_class": "button-secondary",
-            "custom_button_background": "{{ settings.color_palette.foreground }}",
-            "custom_button_text": "{{ settings.color_palette.background }}",
-            "custom_button_border": "{{ settings.color_palette.background }}",
-            "link_text_color": "",
+            "alignment": "left",
+            "gap": 16,
+            "vertical_on_mobile": false
+          },
+          "blocks": {
+            "button_AyTaX7": {
+              "type": "button",
+              "settings": {
+                "label": "Book your safari",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-secondary",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
+            "button_YDthVN": {
+              "type": "button",
+              "settings": {
+                "label": "View Packages",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "rgba(0,0,0,0)",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_AyTaX7",
+            "button_YDthVN"
+          ]
+        },
+        "text_gY3N99": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "custom_anchor": "",
+            "text": "<p>Land at midnight and be in the lineup at 6am next morning</p>",
             "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "{{ settings.color_palette.background }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {}
         }
@@ -87,9 +148,11 @@
       "block_order": [
         "text_tzGazA",
         "text_9CFJ4Q",
-        "button_MGhx96"
+        "button_group_k3xnAm",
+        "text_gY3N99"
       ],
       "settings": {
+        "custom_anchor": "",
         "media_type_1": "image",
         "image_1": "shopify://shop_images/surfing-some-chill-waves-in-ericeira.png",
         "media_type_2": "image",
@@ -106,7 +169,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "gap": 25,
         "section_width": "page-width",
         "section_height": "full-screen",
         "section_height_custom": 50,
@@ -117,8 +180,8 @@
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 90,
+        "padding-block-end": 71
       }
     },
     "section_nGBQTf": {
@@ -128,10 +191,11 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
+            "custom_anchor": "",
             "text": "<h2>LISBON SURF SPOTS</h2><h2></h2>",
             "width": "100%",
             "max_width": "normal",
-            "alignment": "center",
+            "alignment": "left",
             "type_preset": "h4",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -154,10 +218,11 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
+            "custom_anchor": "",
             "text": "<h2>Three Surf Zones,<br/>One City</h2>",
             "width": "100%",
             "max_width": "normal",
-            "alignment": "center",
+            "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -183,6 +248,7 @@
       ],
       "name": "Lisbon Surf Spots - Heading",
       "settings": {
+        "custom_anchor": "lisbon-surf-spots",
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
@@ -258,6 +324,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
+                "custom_anchor": "",
                 "text": "<h2>01</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -269,7 +336,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#6C6C6C",
+                "text_color": "#6c6c6c",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -284,6 +351,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
+                "custom_anchor": "",
                 "text": "<h3>Carcavelos · Estoril · Cascais</h3>",
                 "width": "100%",
                 "max_width": "normal",
@@ -310,6 +378,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
+                "custom_anchor": "",
                 "text": "<p>Classic beach and point breaks on the Lisbon-Cascais coastline. Mellow right handers and offshore winds</p>",
                 "width": "100%",
                 "max_width": "normal",
@@ -383,6 +452,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
+                "custom_anchor": "",
                 "text": "<h2>02</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -394,7 +464,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#6C6C6C",
+                "text_color": "#6c6c6c",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -409,6 +479,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
+                "custom_anchor": "",
                 "text": "<h3>Costa da Caparica</h3>",
                 "width": "100%",
                 "max_width": "normal",
@@ -435,6 +506,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
+                "custom_anchor": "",
                 "text": "<p>30 km of sandy Atlantic beach south of the Tagus. Great peaks, fewer crowds, and brilliant longboarding on the right swell.</p>",
                 "width": "100%",
                 "max_width": "normal",
@@ -508,6 +580,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
+                "custom_anchor": "",
                 "text": "<h2>03</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -519,7 +592,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#6C6C6C",
+                "text_color": "#6c6c6c",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -534,6 +607,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
+                "custom_anchor": "",
                 "text": "<h3>Ericeira</h3>",
                 "width": "100%",
                 "max_width": "normal",
@@ -560,6 +634,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
+                "custom_anchor": "",
                 "text": "<p>Europe's only World Surfing Reserve. From the mellow peelers of Ribeira d'Ilhas to the powerful reefs of Coxos — world-class for every level.</p>",
                 "width": "100%",
                 "max_width": "normal",
@@ -597,6 +672,7 @@
       ],
       "name": "Lisbon Surf Spots - Content",
       "settings": {
+        "custom_anchor": "",
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
@@ -621,7 +697,7 @@
         "border_opacity": 100,
         "border_color": "",
         "border_radius": 0,
-        "padding-block-start": 48,
+        "padding-block-start": 0,
         "padding-block-end": 48
       }
     },
@@ -691,6 +767,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
+                "custom_anchor": "",
                 "text": "<p><em>I will create a personalized surf trip for you so you don't have to</em></p>",
                 "width": "100%",
                 "max_width": "normal",
@@ -741,7 +818,7 @@
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
               "settings": {
-                "image_ratio": "portrait",
+                "image_ratio": "landscape",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -804,7 +881,7 @@
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "flex-start",
                     "gap": 0,
-                    "width": "fill",
+                    "width": "fit-content",
                     "custom_width": 70,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
@@ -954,14 +1031,15 @@
           ]
         }
       },
-      "name": "t:names.product_list",
+      "name": "Surf packages",
       "settings": {
+        "custom_anchor": "surf-packages",
         "collection": "frontpage",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 3,
         "columns": 3,
-        "mobile_columns": "2",
+        "mobile_columns": "1",
         "mobile_card_size": "60cqw",
         "columns_gap": 26,
         "rows_gap": 36,
@@ -982,6 +1060,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
+            "custom_anchor": "",
             "text": "<p><strong>Every Package Includes</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
@@ -993,7 +1072,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "#6C6C6C",
+            "text_color": "#6c6c6c",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -1097,6 +1176,7 @@
                 "text_RkVCCk": {
                   "type": "text",
                   "settings": {
+                    "custom_anchor": "",
                     "text": "<p>Pickup & Drop-off</p>",
                     "width": "100%",
                     "max_width": "normal",
@@ -1122,6 +1202,7 @@
                 "text_PdD99N": {
                   "type": "text",
                   "settings": {
+                    "custom_anchor": "",
                     "text": "<p>from your accommodation in Lisbon</p>",
                     "width": "100%",
                     "max_width": "normal",
@@ -1249,6 +1330,7 @@
                 "text_AHf8EV": {
                   "type": "text",
                   "settings": {
+                    "custom_anchor": "",
                     "text": "<p>Expert Wave Selection</p>",
                     "width": "100%",
                     "max_width": "normal",
@@ -1274,6 +1356,7 @@
                 "text_QPLrUy": {
                   "type": "text",
                   "settings": {
+                    "custom_anchor": "",
                     "text": "<p>Best spot for your level & condition</p>",
                     "width": "100%",
                     "max_width": "normal",
@@ -1401,6 +1484,7 @@
                 "text_q8cghr": {
                   "type": "text",
                   "settings": {
+                    "custom_anchor": "",
                     "text": "<p>Snack & Coffee After</p>",
                     "width": "100%",
                     "max_width": "normal",
@@ -1426,6 +1510,7 @@
                 "text_cWWPqx": {
                   "type": "text",
                   "settings": {
+                    "custom_anchor": "",
                     "text": "<p>Post-surf fuel, on me</p>",
                     "width": "100%",
                     "max_width": "normal",
@@ -1469,6 +1554,7 @@
       ],
       "name": "t:names.icons_with_text",
       "settings": {
+        "custom_anchor": "",
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
@@ -1544,7 +1630,8 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>No wave no pay</h2>",
+                "custom_anchor": "",
+                "text": "<h2><em>\"No wave no pay\"</em></h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1570,6 +1657,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
+                "custom_anchor": "",
                 "text": "<p>If the ocean doesn't deliver, neither do I. Full refund. No questions asked.</p>",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -1604,6 +1692,7 @@
       ],
       "name": "No Wave No Pay",
       "settings": {
+        "custom_anchor": "",
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "space-between",
@@ -1632,6 +1721,556 @@
         "padding-block-start": 82,
         "padding-block-end": 82
       }
+    },
+    "split_showcase_with_header_fFLAbD": {
+      "type": "split-showcase-with-header",
+      "blocks": {
+        "group_tCURbY": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 32,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "hero-apparel-2",
+            "padding-block-start": 40,
+            "padding-block-end": 40,
+            "padding-inline-start": 40,
+            "padding-inline-end": 40
+          },
+          "blocks": {
+            "text_acTtbF": {
+              "type": "text",
+              "settings": {
+                "custom_anchor": "",
+                "text": "<h3><em><strong>A surf guide is for you if you can already surf</strong></em></h3>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#d19465",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_d6pYBK": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "custom_anchor": "",
+                "text": "<p>If you can paddle out, find your position in the peak and catch waves on your own — that's where I come in. As your local surf guide, I handle everything: reading the forecast, knowing which break is firing, and getting you there at the right tide.<br/><br/>No crowds. No bad decisions. No wasted mornings at the wrong beach. I know these coastlines inside out and I'll take you to the wave that matches your level and your vibe for that day.<br/><br/>Think of it as having a local friend who happens to know every break in the region — and wakes up early to check the surf for you.</p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_WriaBf": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "custom_anchor": "",
+                "text": "<p><em><strong>\"I will be your local surf buddy — not your teacher.\"</strong></em></p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_acTtbF",
+            "text_d6pYBK",
+            "text_WriaBf"
+          ]
+        },
+        "group_eWwgyJ": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 32,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "hero-apparel-1",
+            "padding-block-start": 40,
+            "padding-block-end": 40,
+            "padding-inline-start": 40,
+            "padding-inline-end": 40
+          },
+          "blocks": {
+            "text_WT6rLV": {
+              "type": "text",
+              "settings": {
+                "custom_anchor": "",
+                "text": "<h4><em><strong>Surf lessons are ideal if you are still learning</strong></em></h4>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#d19465",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_4xM8ta": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "custom_anchor": "",
+                "text": "<p>Lessons are brilliant if you want someone to teach you how to surf or learn to catch green waves, push you on to waves or simply help you paddle out to the lineup. If that's you, start there — do a few lessons and learn the basics in a safe, structured environment.<br/><br/>A guided safari is a different experience altogether. It's not about coaching — it's about getting you to the right wave at the right time. Real conditions, local knowledge, and someone who knows these coastlines better than anyone.</p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_WT6rLV",
+            "text_4xM8ta"
+          ]
+        }
+      },
+      "block_order": [
+        "group_tCURbY",
+        "group_eWwgyJ"
+      ],
+      "name": "Split showcase + header",
+      "settings": {
+        "custom_anchor": "#guide-vs-lessons",
+        "heading": "<h2><em>Surf Guide vs<br/>Surf Lessons</em></h2>",
+        "subheading": "",
+        "text_alignment": "left",
+        "section_width": "page-width",
+        "panels_height": "large",
+        "background_color": "",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "17883460253adfd21e": {
+      "type": "_blocks",
+      "blocks": {
+        "text_VqD7tG": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "custom_anchor": "gallery",
+            "text": "<h2>Surf Safari Vibes..</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 100,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_ifrABW": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "custom_anchor": "",
+            "text": "<p>Where there's a swell, there's a WAVE</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h5",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "xo_gallery_xo_gallery_2_4zQJWp": {
+          "type": "shopify://apps/xo-gallery/blocks/xo-gallery-2/e61dfbaa-1a75-4e4e-bffc-324f17325251",
+          "settings": {
+            "gallery_metaobjects": "surf-gallery",
+            "padding_top": 50,
+            "padding_bottom": 50
+          }
+        }
+      },
+      "block_order": [
+        "text_VqD7tG",
+        "text_ifrABW",
+        "xo_gallery_xo_gallery_2_4zQJWp"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "hero_CaaXYA": {
+      "type": "hero",
+      "blocks": {
+        "text_GWJkVC": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "custom_anchor": "",
+            "text": "<p><strong>READY TO SURF?</strong></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "loose",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "{{ settings.color_palette.background }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_mdihec": {
+          "type": "text",
+          "settings": {
+            "custom_anchor": "",
+            "text": "<h2>Planning a Surf Trip<br/>to Portugal? </h2>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "{{ settings.color_palette.background }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_gpNUxC": {
+          "type": "text",
+          "settings": {
+            "custom_anchor": "",
+            "text": "<p>Land at midnight, and be surfing the wave of your dreams at 6am next morning</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "{{ settings.color_palette.background }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 32,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_group_im4MNT": {
+          "type": "button-group",
+          "name": "Button group",
+          "settings": {
+            "alignment": "left",
+            "gap": 12,
+            "vertical_on_mobile": false
+          },
+          "blocks": {
+            "button_QaQCLh": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Book Now",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-secondary",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
+            "button_7W3RxL": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Whatsapp me",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "rgba(0,0,0,0)",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_QaQCLh",
+            "button_7W3RxL"
+          ]
+        },
+        "text_Dz9CVW": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "custom_anchor": "",
+            "text": "<p>No wave · No pay — full guarantee on every session.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "{{ settings.color_palette.background }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_GWJkVC",
+        "text_mdihec",
+        "text_gpNUxC",
+        "button_group_im4MNT",
+        "text_Dz9CVW"
+      ],
+      "name": "t:names.hero",
+      "settings": {
+        "custom_anchor": "",
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/surfing-some-chill-waves-in-ericeira.png",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "large",
+        "section_height_custom": 50,
+        "background_color": "",
+        "toggle_overlay": true,
+        "overlay_color": "#00000045",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
     }
   },
   "order": [
@@ -1640,6 +2279,9 @@
     "section_QQeRbN",
     "product_list_UwRqN4",
     "section_nU6Ear",
-    "section_F9fMc4"
+    "section_F9fMc4",
+    "split_showcase_with_header_fFLAbD",
+    "17883460253adfd21e",
+    "hero_CaaXYA"
   ]
 }

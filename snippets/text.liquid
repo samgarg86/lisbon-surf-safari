@@ -78,6 +78,7 @@
     {% endif %}
   "
 
+  {% if block.settings.custom_anchor != blank %}id="{{ block.settings.custom_anchor }}"{% endif %}
   {{ block.shopify_attributes }}
 {% endcapture %}
 

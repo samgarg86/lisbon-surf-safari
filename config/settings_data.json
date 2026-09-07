@@ -9,13 +9,15 @@
  */
 {
   "current": {
-    "page_background_color": "{{ settings.color_palette.background }}",
+    "logo": "shopify://shop_images/ChatGPT_Image_Sep_1_2026_06_49_36_PM.png",
+    "logo_inverse": "shopify://shop_images/ChatGPT_Image_Sep_1_2026_06_52_31_PM.png",
+    "logo_height": 38,
     "page_text_color": "{{ settings.color_palette.foreground }}",
     "type_body_font": "red_hat_text_n4",
-    "type_subheading_font": "newsreader_n2",
-    "type_heading_font": "newsreader_n2",
+    "type_subheading_font": "newsreader_n3",
+    "type_heading_font": "newsreader_n3",
     "type_accent_font": "red_hat_text_n4",
-    "type_size_paragraph": "12",
+    "type_size_paragraph": "14",
     "type_line_height_paragraph": "body-loose",
     "type_font_h1": "heading",
     "type_size_h1": "120",
@@ -36,6 +38,7 @@
     "type_line_height_h6": "display-loose",
     "type_letter_spacing_h6": "heading-normal",
     "type_case_h6": "uppercase",
+    "page_background_color": "{{ settings.color_palette.background }}",
     "badge_corner_radius": 0,
     "badge_sale_background_color": "{{ settings.color_palette.color1 }}",
     "badge_sale_text_color": "{{ settings.color_palette.background }}",
@@ -71,9 +74,9 @@
     "popover_border_radius": 0,
     "currency_code_enabled_product_pages": false,
     "currency_code_enabled_product_cards": false,
+    "mobile_quick_add": true,
     "quick_add_background": "{{ settings.color_palette.background }}",
     "quick_add_text": "{{ settings.color_palette.foreground }}",
-    "mobile_quick_add": true,
     "product_corner_radius": 0,
     "card_corner_radius": 0,
     "card_title_case": "uppercase",
@@ -88,6 +91,31 @@
     "palette_selected_variant_border": "{{ settings.color_palette.foreground }}",
     "variant_button_radius": 0,
     "variant_button_width": "default-width-buttons",
+    "content_for_index": [],
+    "blocks": {
+      "3886181796285292942": {
+        "type": "shopify://apps/cowlendar-booking/blocks/app-embed/6d8b8f6a-9b3c-42b8-b2e6-a758c38d45bf",
+        "disabled": false,
+        "settings": {}
+      },
+      "14684659138027382045": {
+        "type": "shopify://apps/xo-gallery/blocks/xo-gallery-scripts/e61dfbaa-1a75-4e4e-bffc-324f17325251",
+        "disabled": false,
+        "settings": {}
+      },
+      "7770194999415187106": {
+        "type": "shopify://apps/xo-gallery/blocks/xo-gallery-seo/e61dfbaa-1a75-4e4e-bffc-324f17325251",
+        "disabled": false,
+        "settings": {}
+      },
+      "7520711097648287086": {
+        "type": "shopify://apps/lookfy-gallery/blocks/app-embed/596af5f6-9933-4730-95c2-f7d8d52a0c3e",
+        "disabled": false,
+        "settings": {
+          "exclude_pages": ""
+        }
+      }
+    },
     "color_palette": {
       "background": "#ffffff",
       "foreground": "#000000",

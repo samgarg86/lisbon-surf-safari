@@ -10,6 +10,7 @@
   class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
 ></div>
 <div
+  {% if section.settings.custom_anchor != blank %}id="{{ section.settings.custom_anchor }}"{% endif %}
   class="
     section
     section--{{ section.settings.section_width }}
@@ -36,6 +37,12 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "custom_anchor",
+      "label": "Section anchor",
+      "info": "Used for scroll-to links. Enter 'surf-sessions' to link with '#surf-sessions'"
+    },
     {
       "type": "range",
       "id": "columns",

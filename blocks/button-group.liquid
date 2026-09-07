@@ -1,0 +1,111 @@
+
+{%- liquid
+  case block.settings.alignment
+    when 'center'
+      assign flex_alignment = 'center'
+    when 'right'
+      assign flex_alignment = 'flex-end'
+    else
+      assign flex_alignment = 'flex-start'
+  endcase
+-%}
+
+{%- capture children -%}
+  {%- content_for 'blocks' -%}
+{%- endcapture -%}
+
+<div
+  class="
+    button-group
+    layout-panel-flex
+    layout-panel-flex--row
+    gap-style
+    {%- if block.settings.vertical_on_mobile %} mobile-column{%- endif %}
+  "
+  style="
+          --flex-direction: row;
+    --horizontal-alignment: {{ flex_alignment }};
+    --vertical-alignment: center;
+    --flex-wrap: wrap;
+    --flex-wrap-mobile: wrap;
+    {% render 'gap-style', value: block.settings.gap %}
+  "
+  {{ block.shopify_attributes }}
+>
+  {{- children -}}
+</div>
+
+{% schema %}
+{
+  "name": "Button group",
+  "tag": null,
+  "blocks": [
+    {
+      "type": "button"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "t:settings.alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:options.left"
+        },
+        {
+          "value": "center",
+          "label": "t:options.center"
+        },
+        {
+          "value": "right",
+          "label": "t:options.right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "t:settings.gap",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "checkbox",
+      "id": "vertical_on_mobile",
+      "label": "t:settings.vertical_on_mobile",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Button group",
+      "category": "t:categories.basic",
+      "blocks": {
+        "button_1": {
+          "type": "button",
+          "settings": {
+            "label": "Primary",
+            "style_class": "button",
+            "link": "shopify://collections/all"
+          }
+        },
+        "button_2": {
+          "type": "button",
+          "settings": {
+            "label": "Secondary",
+            "style_class": "button-secondary",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": ["button_1", "button_2"]
+    }
+  ]
+}
+{% endschema %}

@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -74,7 +75,7 @@
                 "text": "<h1>{{ closest.product.title }}</h1>",
                 "width": "100%",
                 "max_width": "normal",
-                "alignment": "center",
+                "alignment": "left",
                 "type_preset": "h3",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -93,15 +94,41 @@
               },
               "blocks": {}
             },
+            "text_czzL9b": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>{{ closest.product.description }}</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "price_a7krng": {
               "type": "price",
               "settings": {
                 "show_sale_price_first": true,
-                "show_installments": true,
+                "show_installments": false,
                 "show_tax_info": true,
-                "type_preset": "h5",
+                "type_preset": "h4",
                 "width": "100%",
-                "alignment": "center",
+                "alignment": "left",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -211,151 +238,6 @@
               },
               "block_order": []
             },
-            "accordion_NKWPiW": {
-              "type": "accordion",
-              "name": "t:names.accordion",
-              "settings": {
-                "icon": "caret",
-                "dividers": true,
-                "divider_color": "{{ settings.color_palette.color2 }}",
-                "type_preset": "h6",
-                "background_color": "",
-                "text_color": "",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "accordion_row_NdBezV": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Description",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_n7A9da": {
-                      "type": "text",
-                      "settings": {
-                        "text": "{{ closest.product.description }}",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-subheading--family)",
-                        "font_size": "1.125rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 12,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_n7A9da"
-                  ]
-                },
-                "accordion_row_iJM37V": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Care",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_VdG98J": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>To maintain the beauty and integrity of your purchase, we recommend treating it with care. Simple maintenance practices, such as gentle washing and proper storage, can effectively preserve the longevity of your favorites. We encourage you to refer to the care instructions included with each item, designed to help you keep your purchase in top condition.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-subheading--family)",
-                        "font_size": "1.125rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 12,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_VdG98J"
-                  ]
-                },
-                "accordion_row_pLFDcD": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Design",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_qLGEN9": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Our dedication to excellence extends beyond materials; it encompasses the artistry and craftsmanship illustrated in every piece we create.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-subheading--family)",
-                        "font_size": "1.125rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 12,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_qLGEN9"
-                  ]
-                }
-              },
-              "block_order": [
-                "accordion_row_NdBezV",
-                "accordion_row_iJM37V",
-                "accordion_row_pLFDcD"
-              ]
-            },
             "disclosures_hFEnPD": {
               "type": "disclosures",
               "name": "t:names.disclosures",
@@ -378,11 +260,11 @@
           },
           "block_order": [
             "text_9WaLn7",
+            "text_czzL9b",
             "price_a7krng",
             "divider_HrJgFt",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
-            "accordion_NKWPiW",
             "disclosures_hFEnPD"
           ]
         }
@@ -493,6 +375,7 @@
                 "border_opacity": 100,
                 "border_color": "",
                 "border_radius": 0,
+                "link": "",
                 "open_in_new_tab": false,
                 "padding-block-start": 2,
                 "padding-block-end": 0,
@@ -531,6 +414,7 @@
                     "border_opacity": 100,
                     "border_color": "",
                     "border_radius": 0,
+                    "link": "",
                     "open_in_new_tab": false,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
@@ -622,6 +506,7 @@
                     "border_opacity": 100,
                     "border_color": "",
                     "border_radius": 0,
+                    "link": "",
                     "open_in_new_tab": false,
                     "padding-block-start": 0,
                     "padding-block-end": 0,

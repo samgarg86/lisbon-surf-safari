@@ -8,7 +8,8 @@
   section: section,
   children: children,
   section_id: section.id,
-  background_color: section.settings.background_color
+  background_color: section.settings.background_color,
+  anchor_id: section.settings.custom_anchor
 %}
 
 {% schema %}
@@ -30,6 +31,12 @@
     "groups": ["header"]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "custom_anchor",
+      "label": "Section anchor",
+      "info": "Used for scroll-to links. Enter 'surf-sessions' to link with '#surf-sessions'"
+    },
     {
       "type": "header",
       "content": "t:content.layout"

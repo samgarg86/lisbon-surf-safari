@@ -21,6 +21,7 @@
 
 <div class="section-background color-custom-{{ section_id }}"></div>
 <div
+  {% if anchor_id != blank %}id="{{ anchor_id }}"{% endif %}
   class="section section--{{ section.settings.section_width }} color-custom-{{ section_id }}"
   data-testid="ui-test-section"
 

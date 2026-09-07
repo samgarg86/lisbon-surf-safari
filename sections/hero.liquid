@@ -460,7 +460,7 @@
 {% render 'measure-header-heights', only_when_first_section: true %}
 
 <div
-  id="Hero-{{ section.id }}"
+  id="{% if section.settings.custom_anchor != blank %}{{ section.settings.custom_anchor }}{% else %}Hero-{{ section.id }}{% endif %}"
   class="hero{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}{% if section.blocks.size == 0 and section.settings.section_height == 'auto' %} hero--no-blocks-auto-height{% endif %}{% if section.settings.stack_media_on_mobile %} hero--stack-mobile{% endif %}"
   style="
     --hero-border-style: {{ section.settings.border }};
@@ -790,6 +790,12 @@
     "groups": ["header"]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "custom_anchor",
+      "label": "Section anchor",
+      "info": "Used for scroll-to links. Enter 'surf-sessions' to link with '#surf-sessions'"
+    },
     {
       "type": "header",
       "content": "t:content.media_1"

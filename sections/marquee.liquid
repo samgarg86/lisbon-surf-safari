@@ -17,6 +17,7 @@
   class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
 ></div>
 <marquee-component
+  {% if section.settings.custom_anchor != blank %}id="{{ section.settings.custom_anchor }}"{% endif %}
   class="section spacing-style gap-style{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
   style="
     {%- render 'spacing-style', settings: section.settings %};
@@ -118,6 +119,12 @@
     }
   ],
   "settings": [
+    {
+      "type": "text",
+      "id": "custom_anchor",
+      "label": "Section anchor",
+      "info": "Used for scroll-to links. Enter 'surf-sessions' to link with '#surf-sessions'"
+    },
     {
       "type": "select",
       "id": "movement_direction",

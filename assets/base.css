@@ -1185,7 +1185,7 @@ summary:hover {
 .layout-panel-flex {
   display: flex;
   gap: var(--gap);
-  height: 100%;
+  /*height: 100%;*/
 }
 
 .shopify-block:has(> [shopify-block-empty]) {

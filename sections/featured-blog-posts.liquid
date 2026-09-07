@@ -15,6 +15,7 @@
 ></div>
 
 <div
+  {% if section.settings.custom_anchor != blank %}id="{{ section.settings.custom_anchor }}"{% endif %}
   class="
     section
     section--{{ section.settings.section_width }}
@@ -88,6 +89,12 @@
     }
   ],
   "settings": [
+    {
+      "type": "text",
+      "id": "custom_anchor",
+      "label": "Section anchor",
+      "info": "Used for scroll-to links. Enter 'surf-sessions' to link with '#surf-sessions'"
+    },
     {
       "type": "blog",
       "id": "blog",
