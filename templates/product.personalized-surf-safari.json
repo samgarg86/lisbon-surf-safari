@@ -122,6 +122,34 @@
               },
               "blocks": {}
             },
+            "text_kNifk7": {
+              "type": "text",
+              "name": "t:names.text",
+              "disabled": true,
+              "settings": {
+                "custom_anchor": "",
+                "text": "<p><span style=\"text-decoration:underline\"><strong>What your day will look like</strong></span></p><p>I pick you up from your accommodation, drive you to the best spot for the day. </p><p>We arrive there, and while you change I will explain you how the spot works. Where to go in and how to get out. Where its the best place in the lineup to catch the most waves. And where is it you definitely should not be :)</p><p>Then you go surf. Most of the times I stay outside. I could take your pictures or videos if you want me to. </p><p>Remember, I'm your surf guide, not your surf instuctor. I will give you tips to surf that wave but I will not teach you how to surf. </p><p>When you finish, there will be a little snack and coffee waiting for you :)<br/><br/>Then I will drop you off. If we both feel like it, we can also stop by somewhere nice for lunch (or brunch depending on the hour). I know a few nice places to eat in and around Lisbon!</p><p><br/>*Depending on the conditions, tides and your schedule, we will agree on an appropriate time to go surf. Most likely it will be in the mornings, but if there are no waves in the morning we may go a bit later.</p><p>*No wave - no pay</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "button_U3Lk77": {
               "type": "button",
               "name": "t:names.button",
@@ -140,12 +168,164 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "accordion_Jyfh8g": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "plus",
+                "dividers": true,
+                "divider_color": "",
+                "type_preset": "h6",
+                "background_color": "",
+                "text_color": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 49,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_rJRQ4P": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "What is a typical Surf Safari Day",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_Ewmzbr": {
+                      "type": "text",
+                      "settings": {
+                        "custom_anchor": "",
+                        "text": "<p>I pick you up from your accommodation, drive you to the best spot for the day. </p><p>We arrive there, and while you change I will explain you how the spot works. Where to go in and how to get out. Where its the best place in the lineup to catch the most waves. And where is it you definitely should not be :)</p><p>Then you go surf. Most of the times I stay outside. I could take your pictures or videos if you want me to. </p><p>Remember, I'm your surf guide, not your surf instuctor. I will give you tips to surf that wave but I will not teach you how to surf. </p><p>When you finish, there will be a little snack and coffee waiting for you :)<br/><br/>Then I will drop you off. If we both feel like it, we can also stop by somewhere nice for lunch (or brunch depending on the hour). I know a few nice places to eat in and around Lisbon!</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_Ewmzbr"
+                  ]
+                },
+                "accordion_row_wiyhNe": {
+                  "type": "_accordion-row",
+                  "name": "t:names.accordion_row",
+                  "settings": {
+                    "heading": "Surf Schedule",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_BTGT3C": {
+                      "type": "text",
+                      "settings": {
+                        "custom_anchor": "",
+                        "text": "<p>Depending on the conditions, tides and your schedule, we will agree on an appropriate time to go surf. Most likely it will be in the mornings, but if there are no waves in the morning we may go a bit later.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_BTGT3C"
+                  ]
+                },
+                "accordion_row_k3rinj": {
+                  "type": "_accordion-row",
+                  "name": "t:names.accordion_row",
+                  "settings": {
+                    "heading": "No Wave - No Pay",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_RYWWa4": {
+                      "type": "text",
+                      "settings": {
+                        "custom_anchor": "",
+                        "text": "<p>If the ocean doesn't deliver, neither do I. Full refund.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_RYWWa4"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_rJRQ4P",
+                "accordion_row_wiyhNe",
+                "accordion_row_k3rinj"
+              ]
             }
           },
           "block_order": [
             "text_9WaLn7",
             "text_czzL9b",
-            "button_U3Lk77"
+            "text_kNifk7",
+            "button_U3Lk77",
+            "accordion_Jyfh8g"
           ]
         }
       },
@@ -169,7 +349,7 @@
           "name": "t:names.header",
           "settings": {
             "custom_anchor": "",
-            "text": "<h3>You may also like</h3>",
+            "text": "<h3>Other Surf Safari Packages</h3>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
