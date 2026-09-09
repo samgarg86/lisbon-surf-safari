@@ -150,6 +150,15 @@
               },
               "blocks": {}
             },
+            "quantity_3m4Ynp": {
+              "type": "quantity",
+              "name": "t:names.quantity",
+              "settings": {
+                "label": "Number of surfers",
+                "max_quantity": 3
+              },
+              "blocks": {}
+            },
             "price_reKAqN": {
               "type": "price",
               "name": "t:names.product_price",
@@ -246,12 +255,8 @@
                       "disabled": true,
                       "static": true,
                       "settings": {
-                        "input_style": "default",
-                        "input_background_color": "{{ settings.color_palette.background }}",
-                        "input_text_color": "{{ settings.color_palette.foreground }}",
-                        "input_border_color": "{{ settings.color_palette.foreground }}",
-                        "border_width": 1,
-                        "border_radius": 0
+                        "label": "Number of surfers",
+                        "max_quantity": 3
                       },
                       "blocks": {}
                     },
@@ -470,6 +475,7 @@
             "text_9WaLn7",
             "text_czzL9b",
             "text_UJTBWU",
+            "quantity_3m4Ynp",
             "price_reKAqN",
             "group_ryeQ49",
             "spacer_ekYhX4",
