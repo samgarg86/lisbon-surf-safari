@@ -92,6 +92,7 @@
     "palette_selected_variant_border": "{{ settings.color_palette.foreground }}",
     "variant_button_radius": 0,
     "variant_button_width": "default-width-buttons",
+    "social_instagram_link": "https://www.instagram.com/lisbonsurfsafari/",
     "content_for_index": [],
     "blocks": {
       "3886181796285292942": {
