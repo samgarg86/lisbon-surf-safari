@@ -1128,7 +1128,7 @@
               "type": "icon",
               "settings": {
                 "icon": "truck",
-                "image_upload": "shopify://shop_images/van.png",
+                "image_upload": "shopify://shop_images/icon.png",
                 "width": 64,
                 "link": "",
                 "open_in_new_tab": false,
@@ -1712,7 +1712,7 @@
         "background_image": "shopify://shop_images/No_wave_86cfc266-acc1-44f6-a5ad-37c995ffc8e2.jpg",
         "background_image_position": "cover",
         "toggle_overlay": true,
-        "overlay_color": "#F0E3D2",
+        "overlay_color": "#f0e3d2",
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "border": "none",

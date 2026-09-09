@@ -93,9 +93,43 @@
         "collection_inverse_logo": false,
         "text_color_transparent_collection": ""
       }
+    },
+    "header_announcements_6be6eN": {
+      "type": "header-announcements",
+      "blocks": {
+        "announcement_thwmPk": {
+          "type": "_announcement",
+          "settings": {
+            "text": "SUMMER PROMO - 50% off on all surf safari packages",
+            "link": "",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none",
+            "text_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "announcement_thwmPk"
+      ],
+      "disabled": true,
+      "name": "t:names.announcement_bar",
+      "settings": {
+        "speed": 5,
+        "section_width": "page-width",
+        "background_color": "",
+        "divider_width": 0,
+        "divider_color": "",
+        "padding-block-start": 15,
+        "padding-block-end": 15
+      }
     }
   },
   "order": [
-    "header_section"
+    "header_section",
+    "header_announcements_6be6eN"
   ]
 }

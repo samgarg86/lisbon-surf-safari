@@ -17,6 +17,7 @@
         "group_acXtYY": {
           "type": "group",
           "name": "t:names.group",
+          "disabled": true,
           "settings": {
             "content_direction": "row",
             "vertical_on_mobile": true,
@@ -339,7 +340,7 @@
           "settings": {
             "icon_color": "",
             "facebook_url": "https://www.facebook.com/",
-            "instagram_url": "https://www.instagram.com/",
+            "instagram_url": "https://www.instagram.com/lisbonsurfsafari/",
             "youtube_url": "https://www.youtube.com/",
             "tiktok_url": "https://www.tiktok.com/",
             "twitter_url": "https://www.x.com/",
@@ -360,12 +361,11 @@
         "footer_policy_list_YXDWfF",
         "social_links_BGVf9A"
       ],
-      "disabled": true,
       "settings": {
         "section_width": "page-width",
         "gap": 24,
-        "background_color": "{{ settings.color_palette.background }}",
-        "divider_thickness": 1,
+        "background_color": "{{ settings.color_palette.foreground }}",
+        "divider_thickness": 0,
         "divider_color": "{{ settings.color_palette.color2 }}",
         "padding-block-start": 12,
         "padding-block-end": 16
