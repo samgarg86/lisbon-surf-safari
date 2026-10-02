@@ -154,8 +154,9 @@
       ],
       "settings": {
         "custom_anchor": "",
-        "media_type_1": "image",
+        "media_type_1": "video",
         "image_1": "shopify://shop_images/surfing-some-chill-waves-in-ericeira.png",
+        "video_1": "shopify://files/videos/Rib-2.mp4",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -176,7 +177,7 @@
         "section_height_custom": 50,
         "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": true,
-        "overlay_color": "#00000099",
+        "overlay_color": "rgba(0,0,0,0)",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": false,
@@ -1724,6 +1725,107 @@
         "padding-block-end": 82
       }
     },
+    "17883460253adfd21e": {
+      "type": "_blocks",
+      "blocks": {
+        "text_VqD7tG": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "custom_anchor": "gallery",
+            "text": "<h2><em>Surf Safari Vibes..</em></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 65,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_ifrABW": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "custom_anchor": "",
+            "text": "<p>Where there's a swell, there's a WAVE</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h5",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "xo_gallery_xo_gallery_2_4zQJWp": {
+          "type": "shopify://apps/xo-gallery/blocks/xo-gallery-2/e61dfbaa-1a75-4e4e-bffc-324f17325251",
+          "settings": {
+            "gallery_metaobjects": "surf-gallery",
+            "padding_top": 50,
+            "padding_bottom": 50
+          }
+        }
+      },
+      "block_order": [
+        "text_VqD7tG",
+        "text_ifrABW",
+        "xo_gallery_xo_gallery_2_4zQJWp"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "split_showcase_with_header_fFLAbD": {
       "type": "split-showcase-with-header",
       "blocks": {
@@ -1956,7 +2058,7 @@
         "group_tCURbY",
         "group_eWwgyJ"
       ],
-      "name": "Split showcase + header",
+      "name": "Guide vs Lesson",
       "settings": {
         "custom_anchor": "guide-vs-lessons",
         "heading": "<h2><em>Surf Guide vs<br/>Surf Lessons</em></h2>",
@@ -1969,48 +2071,21 @@
         "padding-block-end": 0
       }
     },
-    "17883460253adfd21e": {
-      "type": "_blocks",
+    "section_6F3eQe": {
+      "type": "section",
       "blocks": {
-        "text_VqD7tG": {
+        "text_H4dVXw": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "custom_anchor": "gallery",
-            "text": "<h2><em>Surf Safari Vibes..</em></h2>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_ifrABW": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
             "custom_anchor": "",
-            "text": "<p>Where there's a swell, there's a WAVE</p>",
+            "text": "<h2><em>Frequently<br/>Asked<br/>Questions?</em></h2>",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "narrow",
             "alignment": "left",
-            "type_preset": "h5",
+            "type_preset": "h2",
             "font": "var(--font-body--family)",
-            "font_size": "1rem",
+            "font_size": "",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -2026,30 +2101,552 @@
           },
           "blocks": {}
         },
-        "xo_gallery_xo_gallery_2_4zQJWp": {
-          "type": "shopify://apps/xo-gallery/blocks/xo-gallery-2/e61dfbaa-1a75-4e4e-bffc-324f17325251",
+        "accordion_QrA9EX": {
+          "type": "accordion",
+          "name": "t:names.accordion",
           "settings": {
-            "gallery_metaobjects": "surf-gallery",
-            "padding_top": 50,
-            "padding_bottom": 50
-          }
+            "icon": "caret",
+            "dividers": true,
+            "divider_color": "",
+            "type_preset": "h5",
+            "background_color": "",
+            "text_color": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_row_PLRdbC": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Can I book a trip longer than a week?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_jyEgTF": {
+                  "type": "text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p>Yes. Choose the Personalized package and tell me your dates, your level and what you're after. I'll plan the whole trip so you don't have to.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_jyEgTF"
+              ]
+            },
+            "accordion_row_KjA6gC": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "What's the best time of year to surf near Lisbon?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_bwHCbn": {
+                  "type": "text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p>You can surf all year. Autumn and winter bring bigger, more powerful swells. Spring and summer are usually smaller and gentler. The water stays cool all year, so a proper wetsuit matters in every season. Not sure when to come? Ask me.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_bwHCbn"
+              ]
+            },
+            "accordion_row_UhUQMN": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "I'm traveling with family. Can I be back in time for the day's plans?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_NyJxpG": {
+                  "type": "text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p>That's what the early morning sessions are for. A 6 am pickup usually gets you back by 10 or 11 am, so you can surf and still spend the day with your family.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_NyJxpG"
+              ]
+            },
+            "accordion_row_bPcecd": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "I'll be landing late at night. Can I surf the next morning?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_hwUttH": {
+                  "type": "text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p>Yes. Land at midnight, and you can be surfing the wave of your dreams at 6 am. Early starts mean emptier lineups, and you can be back in time for breakfast with your family.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_hwUttH"
+              ]
+            },
+            "accordion_row_xBKLJq": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Where do you pick me up?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_RjBWQK": {
+                  "type": "text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p>I pick you up and drop you off at your accommodation. [Add your pickup area, e.g. central Lisbon, Cascais, Parque das Nações, and any extra cost outside it.]</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_RjBWQK"
+              ]
+            },
+            "accordion_row_gUpzye": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "What if there are no waves?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_RnXHtW": {
+                  "type": "text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p><em><strong>No wave, no pay.&nbsp;</strong></em><br/>Lisbon has a long coastline and usually there is always some spot firing. But if I can't find you a wave worth surfing, you don't pay. I'll either issue you a refund or we can re-book for another date.&nbsp;</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_RnXHtW"
+              ]
+            },
+            "accordion_row_jpGRah": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Where will we surf?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_wnGzne": {
+                  "type": "text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p>Lisbon sits right between three surf zones: Carcavelos/Estoril/Cascais, Caparica and Ericeira. On the day, I look at swell, wind and tide, then choose the spot that fits your level and what you're after.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_wnGzne"
+              ]
+            },
+            "accordion_row_V4jEHM": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "How long does a session take?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_Rxjimd": {
+                  "type": "text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p>Usually about 4 hours door to door. That covers the transfer, changing, a 2-hour surf, a snack and coffee, and the ride back. It can vary. Sometimes we drive around and check a few spots to find the right wave, because forecasts aren't always accurate.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_Rxjimd"
+              ]
+            },
+            "accordion_row_tYiyrF": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Is this a surf lesson? Is it for beginners?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_pkdPjT": {
+                  "type": "text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p>No, this is a surf guided experience, not a lesson. A lesson is an instructor teaching you the basics, usually in a group on a beginner beach. A guide is a local who reads the forecast and takes you to the wave that suits you that day. I don't teach technique, I get you to the right spot and let you enjoy it.</p><p>That means this works best if you can already paddle out and catch unbroken waves on your own. If you're just starting out, I'd rather send you to a good local surf school than take you somewhere that won't be fun. Not sure about your level? Message me and we'll figure it out.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_pkdPjT"
+              ]
+            },
+            "accordion_row_FtU93P": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Do I need to bring my own gear?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_q7Nbw8": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p>Ideally, yes, at least some of it. Surfboard: Bring your own if you can. You'll surf better on a board you know, and you won't lose time adjusting to a new one. I know flying with a board isn't always possible. If that's you, we can stop at one of my partner surf schools on the way and get you a rental. Wetsuit: I highly recommend bringing your own. It's your second skin: broken in, and it fits you properly. The water in Portugal is cold, and a good wetsuit in your size makes a big difference. It also packs easily in a suitcase. If you really can't, I can help you rent one.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_q7Nbw8"
+              ]
+            },
+            "accordion_row_pXrERP": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Is it a private experience? Can I come alone?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_KfRYi4": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p>Yes to both. Groups are a maximum of 3 surfers. If you book as a group of 3, the whole experience is private.&nbsp;<br/><br/>If you're on your own or a pair, there's a small chance you'll share the car with one or two other surfers. It's usually a good way to meet other surfers!</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_KfRYi4"
+              ]
+            },
+            "accordion_row_Yh4XPX": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "I have more questions. How can I contact you?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_QGGDkg": {
+                  "type": "text",
+                  "settings": {
+                    "custom_anchor": "",
+                    "text": "<p>Send me a <a href=\"https://wa.me/351928401098\" target=\"_blank\" title=\"Whatsapp\">whatsapp</a> message. I usually reply within 1-2 hours.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_QGGDkg"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_row_PLRdbC",
+            "accordion_row_KjA6gC",
+            "accordion_row_UhUQMN",
+            "accordion_row_bPcecd",
+            "accordion_row_xBKLJq",
+            "accordion_row_gUpzye",
+            "accordion_row_jpGRah",
+            "accordion_row_V4jEHM",
+            "accordion_row_tYiyrF",
+            "accordion_row_FtU93P",
+            "accordion_row_pXrERP",
+            "accordion_row_Yh4XPX"
+          ]
         }
       },
       "block_order": [
-        "text_VqD7tG",
-        "text_ifrABW",
-        "xo_gallery_xo_gallery_2_4zQJWp"
+        "text_H4dVXw",
+        "accordion_QrA9EX"
       ],
-      "name": "Gallery",
+      "name": "t:names.faq_section",
       "settings": {
+        "custom_anchor": "",
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
+        "horizontal_alignment_flex_direction_column": "flex-end",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
+        "gap": 32,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
@@ -2066,8 +2663,8 @@
         "border_opacity": 100,
         "border_color": "",
         "border_radius": 0,
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     },
     "hero_CaaXYA": {
@@ -2104,7 +2701,7 @@
           "type": "text",
           "settings": {
             "custom_anchor": "",
-            "text": "<h2>Planning a Surf Trip<br/>to Portugal? </h2>",
+            "text": "<h2>Planning a Surf Trip<br/>to Portugal?&nbsp;</h2>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -2240,11 +2837,11 @@
         "button_group_im4MNT",
         "text_Dz9CVW"
       ],
-      "name": "t:names.hero",
+      "name": "Footer",
       "settings": {
         "custom_anchor": "",
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/DSCF5094.jpg",
+        "image_1": "shopify://shop_images/surfing-some-chill-waves-in-ericeira.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -2282,8 +2879,9 @@
     "product_list_UwRqN4",
     "section_nU6Ear",
     "section_F9fMc4",
-    "split_showcase_with_header_fFLAbD",
     "17883460253adfd21e",
+    "split_showcase_with_header_fFLAbD",
+    "section_6F3eQe",
     "hero_CaaXYA"
   ]
 }
