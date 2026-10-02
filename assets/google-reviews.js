@@ -74,13 +74,10 @@ class GoogleReviewsCarousel extends HTMLElement {
     this.nextBtn = this.querySelector('.google-reviews__arrow--next');
     this.attribution = this.querySelector('.google-reviews__attribution');
 
-    if (!this._initialized) {
-      this._onPrev = () => this.slide(-1);
-      this._onNext = () => this.slide(1);
-      this.prevBtn.addEventListener('click', this._onPrev);
-      this.nextBtn.addEventListener('click', this._onNext);
-      this._initialized = true;
-    }
+    this._onPrev = () => this.slide(-1);
+    this._onNext = () => this.slide(1);
+    this.prevBtn.addEventListener('click', this._onPrev);
+    this.nextBtn.addEventListener('click', this._onNext);
 
     this._resizeHandler = () => {
       clearTimeout(this._resizeTimer);
