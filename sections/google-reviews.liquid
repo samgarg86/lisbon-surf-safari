@@ -1,0 +1,303 @@
+{% if section.settings.background_color != blank %}
+  {%- render 'contrast-override', background_color: section.settings.background_color, section_id: section.id -%}
+{% endif %}
+
+<div class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"></div>
+
+<google-reviews-carousel
+  {% if section.settings.custom_anchor != blank %}id="{{ section.settings.custom_anchor }}"{% endif %}
+  class="section section--{{ section.settings.section_width }} google-reviews spacing-style{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+  style="{%- render 'spacing-style', settings: section.settings -%}"
+  data-api-key="{{ section.settings.google_api_key | escape }}"
+  data-place-id="{{ section.settings.place_id | escape }}"
+  data-testid="google-reviews-section"
+>
+  {%- if section.settings.heading != blank -%}
+    <h2 class="google-reviews__heading">{{ section.settings.heading | escape }}</h2>
+  {%- endif -%}
+
+  <div class="google-reviews__inner">
+    <div class="google-reviews__loading" aria-label="Loading reviews">
+      <div class="google-reviews__skeleton"></div>
+      <div class="google-reviews__skeleton"></div>
+      <div class="google-reviews__skeleton"></div>
+    </div>
+
+    <div class="google-reviews__slider" hidden>
+      <button
+        class="google-reviews__arrow google-reviews__arrow--prev button button-unstyled"
+        aria-label="Previous review"
+        disabled
+      >
+        {{- 'icon-arrow.svg' | inline_asset_content -}}
+      </button>
+      <div class="google-reviews__overflow">
+        <div class="google-reviews__track"></div>
+      </div>
+      <button
+        class="google-reviews__arrow google-reviews__arrow--next button button-unstyled"
+        aria-label="Next review"
+      >
+        {{- 'icon-arrow.svg' | inline_asset_content -}}
+      </button>
+    </div>
+  </div>
+
+  <div class="google-reviews__attribution" hidden></div>
+</google-reviews-carousel>
+
+<script src="{{ 'google-reviews.js' | asset_url }}" type="module"></script>
+
+{% stylesheet %}
+  google-reviews-carousel {
+    display: block;
+  }
+
+  .google-reviews__heading {
+    text-align: center;
+    margin-block-end: 2rem;
+  }
+
+  /* Loading skeleton */
+  .google-reviews__loading {
+    display: flex;
+    gap: 16px;
+  }
+
+  .google-reviews__skeleton {
+    flex: 0 0 calc((100% - 32px) / 3);
+    height: 220px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: google-reviews-shimmer 1.5s infinite;
+  }
+
+  @keyframes google-reviews-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* Slider layout */
+  .google-reviews__slider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .google-reviews__overflow {
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .google-reviews__track {
+    display: flex;
+    gap: 16px;
+    transition: transform 0.4s ease;
+    will-change: transform;
+  }
+
+  /* Arrow buttons */
+  .google-reviews__arrow {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid currentColor;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .google-reviews__arrow:not([disabled]):hover {
+    opacity: 0.7;
+  }
+
+  .google-reviews__arrow[disabled] {
+    opacity: 0.25;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .google-reviews__arrow--prev svg {
+    transform: rotate(180deg);
+  }
+
+  /* Review card */
+  .review-card {
+    flex: 0 0 calc((100% - 32px) / 3);
+    background: var(--color-background, #fff);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-sizing: border-box;
+  }
+
+  .review-card__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .review-card__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .review-card__avatar-fallback {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: currentColor;
+    color: var(--color-background, #fff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .review-card__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .review-card__name {
+    font-weight: 600;
+    margin: 0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .review-card__date {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin: 0;
+  }
+
+  .review-card__stars {
+    color: #f4b400;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+
+  .review-card__text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Mobile: 1 card */
+  @media (max-width: 767px) {
+    .google-reviews__loading {
+      gap: 0;
+    }
+
+    .google-reviews__skeleton {
+      flex: 0 0 100%;
+    }
+
+    .google-reviews__skeleton:not(:first-child) {
+      display: none;
+    }
+
+    .review-card {
+      flex: 0 0 100%;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Google Reviews",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_anchor",
+      "label": "Section anchor",
+      "info": "Used for scroll-to links. Enter 'reviews' to link with '#reviews'"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What Our Guests Say"
+    },
+    {
+      "type": "text",
+      "id": "google_api_key",
+      "label": "Google Maps API Key",
+      "info": "Restrict this key to your domain in Google Cloud Console before going live."
+    },
+    {
+      "type": "text",
+      "id": "place_id",
+      "label": "Google Place ID",
+      "default": "8897011982286999186"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Width",
+      "options": [
+        { "value": "page-width", "label": "Page" },
+        { "value": "full-width", "label": "Full" }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "placeholder": "Default"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 48
+    }
+  ],
+  "presets": [
+    {
+      "name": "Google Reviews",
+      "category": "Social proof"
+    }
+  ]
+}
+{% endschema %}
