@@ -1,0 +1,183 @@
+
+{% liquid
+  if section.settings.background_color != blank
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  endif
+%}
+
+<div
+  class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+></div>
+
+<div
+  {% if section.settings.custom_anchor != blank %}id="{{ section.settings.custom_anchor }}"{% endif %}
+  class="section section--{{ section.settings.section_width }} faq-section{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %} spacing-style"
+  data-testid="faq-section"
+  style="{%- render 'spacing-style', settings: section.settings -%}"
+>
+  <div class="faq-section__grid" id="faq-grid-{{ section.id }}">
+    {% content_for 'blocks' %}
+  </div>
+</div>
+
+<script>
+  (function () {
+    var grid = document.getElementById('faq-grid-{{ section.id }}');
+    if (!grid) return;
+
+    Array.from(grid.children).forEach(function (col) {
+      var allDetails = col.querySelectorAll('details');
+      allDetails.forEach(function (d) {
+        d.addEventListener('toggle', function () {
+          if (d.open) {
+            allDetails.forEach(function (other) {
+              if (other !== d) other.open = false;
+            });
+          }
+        });
+      });
+    });
+  })();
+</script>
+
+{% stylesheet %}
+  .faq-section__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap-md);
+    align-items: start;
+  }
+
+  .faq-section__grid > :not(.accordion) {
+    grid-column: 1 / -1;
+  }
+
+  @media screen and (min-width: 750px) {
+    .faq-section__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "FAQ - Two Columns",
+  "disabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_anchor",
+      "label": "Section anchor",
+      "info": "Used for scroll-to links. Enter 'faq' to link with '#faq'"
+    },
+    {
+      "type": "header",
+      "content": "t:content.layout"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:options.page"
+        },
+        {
+          "value": "full-width",
+          "label": "t:options.full"
+        }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "header",
+      "content": "t:content.appearance"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
+      "placeholder": "t:settings.default"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@theme"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ - Two Columns",
+      "category": "t:categories.basic",
+      "settings": {
+        "section_width": "page-width"
+      },
+      "blocks": {
+        "accordion_1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "border": "none",
+            "border_radius": 0
+          },
+          "blocks": {
+            "row_1": { "type": "_accordion-row", "settings": { "heading": "What's included in the safari?" }, "blocks": { "text": { "type": "text", "settings": { "text": "<p>Answer goes here.</p>", "type_preset": "rte", "width": "100%" } } }, "block_order": ["text"] },
+            "row_2": { "type": "_accordion-row", "settings": { "heading": "How many people can join?" }, "blocks": { "text": { "type": "text", "settings": { "text": "<p>Answer goes here.</p>", "type_preset": "rte", "width": "100%" } } }, "block_order": ["text"] },
+            "row_3": { "type": "_accordion-row", "settings": { "heading": "What skill level is required?" }, "blocks": { "text": { "type": "text", "settings": { "text": "<p>Answer goes here.</p>", "type_preset": "rte", "width": "100%" } } }, "block_order": ["text"] }
+          },
+          "block_order": ["row_1", "row_2", "row_3"]
+        },
+        "accordion_2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "border": "none",
+            "border_radius": 0
+          },
+          "blocks": {
+            "row_1": { "type": "_accordion-row", "settings": { "heading": "What should I bring?" }, "blocks": { "text": { "type": "text", "settings": { "text": "<p>Answer goes here.</p>", "type_preset": "rte", "width": "100%" } } }, "block_order": ["text"] },
+            "row_2": { "type": "_accordion-row", "settings": { "heading": "What is the cancellation policy?" }, "blocks": { "text": { "type": "text", "settings": { "text": "<p>Answer goes here.</p>", "type_preset": "rte", "width": "100%" } } }, "block_order": ["text"] },
+            "row_3": { "type": "_accordion-row", "settings": { "heading": "Do you provide equipment?" }, "blocks": { "text": { "type": "text", "settings": { "text": "<p>Answer goes here.</p>", "type_preset": "rte", "width": "100%" } } }, "block_order": ["text"] }
+          },
+          "block_order": ["row_1", "row_2", "row_3"]
+        }
+      },
+      "block_order": ["accordion_1", "accordion_2"]
+    }
+  ]
+}
+{% endschema %}

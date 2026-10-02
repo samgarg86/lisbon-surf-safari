@@ -2072,20 +2072,20 @@
       }
     },
     "section_6F3eQe": {
-      "type": "section",
+      "type": "faq",
       "blocks": {
-        "text_H4dVXw": {
+        "text_XAYDAL": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
             "custom_anchor": "",
-            "text": "<h2><em>Frequently<br/>Asked<br/>Questions?</em></h2>",
+            "text": "<h2>Frequently<br/>Asked<br/>Questions!</h2>",
             "width": "fit-content",
-            "max_width": "narrow",
+            "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h2",
+            "type_preset": "rte",
             "font": "var(--font-body--family)",
-            "font_size": "",
+            "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -2101,9 +2101,8 @@
           },
           "blocks": {}
         },
-        "accordion_QrA9EX": {
+        "accordion_left": {
           "type": "accordion",
-          "name": "t:names.accordion",
           "settings": {
             "icon": "caret",
             "dividers": true,
@@ -2367,7 +2366,37 @@
               "block_order": [
                 "text_RnXHtW"
               ]
-            },
+            }
+          },
+          "block_order": [
+            "accordion_row_PLRdbC",
+            "accordion_row_KjA6gC",
+            "accordion_row_UhUQMN",
+            "accordion_row_bPcecd",
+            "accordion_row_xBKLJq",
+            "accordion_row_gUpzye"
+          ]
+        },
+        "accordion_right": {
+          "type": "accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "divider_color": "",
+            "type_preset": "h5",
+            "background_color": "",
+            "text_color": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
             "accordion_row_jpGRah": {
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
@@ -2617,12 +2646,6 @@
             }
           },
           "block_order": [
-            "accordion_row_PLRdbC",
-            "accordion_row_KjA6gC",
-            "accordion_row_UhUQMN",
-            "accordion_row_bPcecd",
-            "accordion_row_xBKLJq",
-            "accordion_row_gUpzye",
             "accordion_row_jpGRah",
             "accordion_row_V4jEHM",
             "accordion_row_tYiyrF",
@@ -2633,36 +2656,15 @@
         }
       },
       "block_order": [
-        "text_H4dVXw",
-        "accordion_QrA9EX"
+        "text_XAYDAL",
+        "accordion_left",
+        "accordion_right"
       ],
-      "name": "t:names.faq_section",
+      "name": "FAQ",
       "settings": {
         "custom_anchor": "",
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-end",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
         "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "background_media": "none",
         "background_color": "",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
         "padding-block-start": 48,
         "padding-block-end": 48
       }
