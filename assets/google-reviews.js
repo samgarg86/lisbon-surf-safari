@@ -34,11 +34,12 @@ function escapeHTML(str) {
 }
 
 function buildCardHTML(review) {
-  const name = escapeHTML(review.author_name || 'Guest');
+  const rawName = review.author_name || 'Guest';
+  const initial = rawName[0].toUpperCase();
+  const name = escapeHTML(rawName);
   const date = escapeHTML(review.relative_time_description || '');
   const text = escapeHTML(review.text || '');
   const rating = review.rating || 5;
-  const initial = name[0].toUpperCase();
 
   const avatar = review.profile_photo_url
     ? `<img src="${escapeHTML(review.profile_photo_url)}" alt="${name}" class="review-card__avatar" loading="lazy" width="48" height="48">`
@@ -73,8 +74,13 @@ class GoogleReviewsCarousel extends HTMLElement {
     this.nextBtn = this.querySelector('.google-reviews__arrow--next');
     this.attribution = this.querySelector('.google-reviews__attribution');
 
-    this.prevBtn.addEventListener('click', () => this.slide(-1));
-    this.nextBtn.addEventListener('click', () => this.slide(1));
+    if (!this._initialized) {
+      this._onPrev = () => this.slide(-1);
+      this._onNext = () => this.slide(1);
+      this.prevBtn.addEventListener('click', this._onPrev);
+      this.nextBtn.addEventListener('click', this._onNext);
+      this._initialized = true;
+    }
 
     this._resizeHandler = () => {
       clearTimeout(this._resizeTimer);
@@ -94,7 +100,10 @@ class GoogleReviewsCarousel extends HTMLElement {
   }
 
   disconnectedCallback() {
+    clearTimeout(this._resizeTimer);
     window.removeEventListener('resize', this._resizeHandler);
+    this.prevBtn?.removeEventListener('click', this._onPrev);
+    this.nextBtn?.removeEventListener('click', this._onNext);
     if (this.track) {
       this.track.removeEventListener('transitionend', this._transitionEndHandler);
     }
