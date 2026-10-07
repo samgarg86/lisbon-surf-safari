@@ -2079,10 +2079,10 @@
           "name": "t:names.heading",
           "settings": {
             "custom_anchor": "",
-            "text": "<h2>Frequently<br/>Asked<br/>Questions!</h2>",
-            "width": "fit-content",
+            "text": "<h2><em>Frequently<br/>Asked<br/>Questions!</em></h2>",
+            "width": "100%",
             "max_width": "normal",
-            "alignment": "left",
+            "alignment": "right",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -2299,7 +2299,7 @@
                   "type": "text",
                   "settings": {
                     "custom_anchor": "",
-                    "text": "<p>I pick you up and drop you off at your accommodation. [Add your pickup area, e.g. central Lisbon, Cascais, Parque das Nações, and any extra cost outside it.]</p>",
+                    "text": "<p>I pick you up and drop you off at your accommodation.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2872,6 +2872,21 @@
         "padding-block-start": 40,
         "padding-block-end": 40
       }
+    },
+    "google_reviews_Mnnxfy": {
+      "type": "google-reviews",
+      "disabled": true,
+      "name": "Google Reviews",
+      "settings": {
+        "custom_anchor": "",
+        "heading": "Testimonials",
+        "google_api_key": "AIzaSyDmvD9QZ4Cg6NV1aalooXDklQW_dZ_xCIo",
+        "place_id": "ChIJJRhiAD2HgC4R5yvdSRMvh8c",
+        "section_width": "page-width",
+        "background_color": "",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
     }
   },
   "order": [
@@ -2884,6 +2899,7 @@
     "17883460253adfd21e",
     "split_showcase_with_header_fFLAbD",
     "section_6F3eQe",
-    "hero_CaaXYA"
+    "hero_CaaXYA",
+    "google_reviews_Mnnxfy"
   ]
 }
