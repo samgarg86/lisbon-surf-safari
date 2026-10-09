@@ -13,7 +13,7 @@
   data-testid="google-reviews-section"
 >
   {%- if section.settings.heading != blank -%}
-    <h2 class="google-reviews__heading">{{ section.settings.heading | escape }}</h2>
+    <div class="google-reviews__heading h2">{{ section.settings.heading }}</div>
   {%- endif -%}
 
   <div class="google-reviews__inner">
@@ -64,6 +64,10 @@
   .google-reviews__heading {
     text-align: center;
     margin-block-end: 2rem;
+  }
+
+  .google-reviews__heading p {
+    margin: 0;
   }
 
   /* Loading skeleton */
@@ -262,10 +266,10 @@
       "info": "Used for scroll-to links. Enter 'reviews' to link with '#reviews'"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "heading",
       "label": "Heading",
-      "default": "What Our Guests Say"
+      "default": "<p>What Our Guests Say</p>"
     },
     {
       "type": "text",
