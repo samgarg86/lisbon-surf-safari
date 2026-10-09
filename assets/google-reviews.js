@@ -94,17 +94,17 @@ class GoogleReviewsCarousel extends HTMLElement {
   }
 
   async _fetchReviews(apiKey, placeId) {
-    const mapsUrl = `https://www.google.com/maps/place/?q=place_id:${placeId}`;
-
     const detailsRes = await fetch(
       `${PLACES_API_BASE}/places/${encodeURIComponent(placeId)}?key=${encodeURIComponent(apiKey)}`,
-      { headers: { 'X-Goog-FieldMask': 'reviews' } }
+      { headers: { 'X-Goog-FieldMask': 'reviews,displayName' } }
     );
     if (!detailsRes.ok) { this.hidden = true; return; }
     const details = await detailsRes.json();
     const reviews = (details.reviews || []).filter(r => (r.rating || 0) >= 3);
     if (!reviews.length) { this.hidden = true; return; }
 
+    const placeName = encodeURIComponent(details.displayName?.text || '');
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${placeName}&query_place_id=${placeId}`;
     this._renderReviews(reviews, mapsUrl);
   }
 
