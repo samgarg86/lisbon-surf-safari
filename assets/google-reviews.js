@@ -52,8 +52,8 @@ function buildCardHTML(review) {
 class GoogleReviewsCarousel extends HTMLElement {
   connectedCallback() {
     const apiKey = this.dataset.apiKey;
-    const placeQuery = this.dataset.placeQuery;
-    if (!apiKey || !placeQuery) return;
+    const placeId = this.dataset.placeId;
+    if (!apiKey || !placeId) return;
 
     this.currentIndex = 0;
     this.reviews = [];
@@ -80,7 +80,7 @@ class GoogleReviewsCarousel extends HTMLElement {
     };
     this.track.addEventListener('transitionend', this._transitionEndHandler);
 
-    this._fetchReviews(apiKey, placeQuery).catch(() => { this.hidden = true; });
+    this._fetchReviews(apiKey, placeId).catch(() => { this.hidden = true; });
   }
 
   disconnectedCallback() {
@@ -93,19 +93,7 @@ class GoogleReviewsCarousel extends HTMLElement {
     }
   }
 
-  async _fetchReviews(apiKey, query) {
-    const searchRes = await fetch(
-      `${PLACES_API_BASE}/places:searchText?key=${encodeURIComponent(apiKey)}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'X-Goog-FieldMask': 'places.id' },
-        body: JSON.stringify({ textQuery: query }),
-      }
-    );
-    if (!searchRes.ok) { this.hidden = true; return; }
-    const searchData = await searchRes.json();
-    const placeId = searchData.places?.[0]?.id;
-    if (!placeId) { this.hidden = true; return; }
+  async _fetchReviews(apiKey, placeId) {
     const mapsUrl = `https://www.google.com/maps/place/?q=place_id:${placeId}`;
 
     const detailsRes = await fetch(

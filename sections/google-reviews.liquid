@@ -9,7 +9,7 @@
   class="section section--{{ section.settings.section_width }} google-reviews spacing-style{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
   style="{%- render 'spacing-style', settings: section.settings -%}"
   data-api-key="{{ section.settings.google_api_key | escape }}"
-  data-place-query="{{ section.settings.place_name | escape }}"
+  data-place-id="{{ section.settings.place_id | escape }}"
   data-testid="google-reviews-section"
 >
   {%- if section.settings.heading != blank -%}
@@ -279,9 +279,9 @@
     },
     {
       "type": "text",
-      "id": "place_name",
-      "label": "Business Name",
-      "info": "Enter your business name exactly as it appears on Google Maps, e.g. 'Lisbon Surf Safari'"
+      "id": "place_id",
+      "label": "Google Place ID",
+      "info": "Find your Place ID at developers.google.com/maps/documentation/places/web-service/place-id#find-id — it starts with 'ChIJ'"
     },
     {
       "type": "select",
