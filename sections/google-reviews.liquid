@@ -9,7 +9,7 @@
   class="section section--{{ section.settings.section_width }} google-reviews spacing-style{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
   style="{%- render 'spacing-style', settings: section.settings -%}"
   data-api-key="{{ section.settings.google_api_key | escape }}"
-  data-place-id="{{ section.settings.place_id | escape }}"
+  data-place-query="{{ section.settings.place_name | escape }}"
   data-testid="google-reviews-section"
 >
   {%- if section.settings.heading != blank -%}
@@ -43,7 +43,10 @@
     </div>
   </div>
 
-  <div class="google-reviews__attribution" hidden></div>
+  <a class="google-reviews__see-all" href="#" target="_blank" rel="noopener noreferrer" hidden>
+    See all reviews on Google Maps
+  </a>
+
 </google-reviews-carousel>
 
 <script src="{{ 'google-reviews.js' | asset_url }}" type="module"></script>
@@ -205,6 +208,26 @@
     margin: 0;
   }
 
+  .review-card__google-icon {
+    margin-inline-start: auto;
+    flex-shrink: 0;
+    opacity: 0.85;
+  }
+
+  .google-reviews__see-all {
+    display: block;
+    text-align: center;
+    margin-block-start: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .google-reviews__see-all:hover {
+    opacity: 1;
+  }
+
   /* Mobile: 1 card */
   @media (max-width: 767px) {
     .google-reviews__loading {
@@ -252,9 +275,9 @@
     },
     {
       "type": "text",
-      "id": "place_id",
-      "label": "Google Place ID",
-      "info": "Find your Place ID at developers.google.com/maps/documentation/javascript/examples/places-placeid-finder — it starts with 'ChIJ'"
+      "id": "place_name",
+      "label": "Business Name",
+      "info": "Enter your business name exactly as it appears on Google Maps, e.g. 'Lisbon Surf Safari'"
     },
     {
       "type": "select",
